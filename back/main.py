@@ -39,6 +39,12 @@ users = [
         "nombre": "María",
         "apellido": "Fernández",
         "DNI": 12345678
+    },
+    {
+        "id":5,
+        "nombre": "Juancito",
+        "apellido": "Fernández",
+        "DNI": 12345633
     }
 ]
 
