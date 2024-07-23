@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro"
+import {UsuarioEditable} from "../components/UsuarioEditable"
+
+const { id } = Astro.params;
+const specificUser = await fetch(`http://localhost:8000/${id}`)
+const {nombre, apellido, DNI} = await specificUser.json()
+---
+
+<Layout title="Client">
+    <h1 class="text-slate-50">Edición</h1>
+    <UsuarioEditable nombre={nombre} apellido={apellido} dni={DNI}/>
+
+    
+</Layout>
